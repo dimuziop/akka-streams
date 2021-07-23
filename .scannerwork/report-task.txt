@@ -1,0 +1,6 @@
+projectKey=Akka-Streams
+serverUrl=http://127.0.0.1:9000
+serverVersion=8.9.1.44547
+dashboardUrl=http://127.0.0.1:9000/dashboard?id=Akka-Streams
+ceTaskId=AXrUqhym5Cetb8JhdzIU
+ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=AXrUqhym5Cetb8JhdzIU
