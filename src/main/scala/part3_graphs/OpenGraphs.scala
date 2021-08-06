@@ -23,7 +23,7 @@ object OpenGraphs extends App {
   val firstSource = Source(1 to 10)
   val secondSource = Source(42 to 1000)
 
-  val sourceGraph = Source.fromGraph(GraphDSL.create(){ implicit builder =>
+  val sourceGraph = Source.fromGraph(GraphDSL.create() { implicit builder =>
     import GraphDSL.Implicits._
 
     val concat = builder.add(Concat[Int](2))
@@ -42,7 +42,7 @@ object OpenGraphs extends App {
   val sink1 = Sink.foreach[Int](x => println(s"Meaningful sink 1: $x"))
   val sink2 = Sink.foreach[Int](x => println(s"Meaningful sink 2: $x"))
 
-  val sinkGraph = Sink.fromGraph(GraphDSL.create(){ implicit builder =>
+  val sinkGraph = Sink.fromGraph(GraphDSL.create() { implicit builder =>
     import GraphDSL.Implicits._
 
     val broadcast = builder.add(Broadcast[Int](2))
@@ -65,7 +65,7 @@ object OpenGraphs extends App {
   val addOneFLow = Flow[Int].map(_ + 1)
   val plusTen = Flow[Int].map(_ * 10)
 
-  val complexFLow = Flow.fromGraph(GraphDSL.create(){ implicit builder =>
+  val complexFLow = Flow.fromGraph(GraphDSL.create() { implicit builder =>
 
     import GraphDSL.Implicits._
 
@@ -81,7 +81,7 @@ object OpenGraphs extends App {
   //firstSource.via(complexFLow).to(Sink.foreach(println)).run()
 
   /**
-  Exercise: flow from a sink and a source?
+   * Exercise: flow from a sink and a source?
    */
 
   val fromSourceFlow = Flow.fromGraph(GraphDSL.create() { implicit builder =>
