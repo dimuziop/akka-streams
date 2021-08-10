@@ -28,3 +28,11 @@ f
 0src/main/scala/part2_primer/OperatorFusion.scala,0/d/0db7c808381bc4d3ff99e75185af67db0c373006
 \
 ,src/main/scala/part3_graphs/OpenGraphs.scala,6/2/62258ddb1835cc847d53f6ed9745f73245de3c4d
+i
+9src/main/scala/part3_graphs/GraphMaterializedValues.scala,4/5/452e4144d7bc783ac96dfbc4d0d447e357c30e73
+d
+4src/main/scala/part3_graphs/BidirectionalFLows.scala,3/7/3722314731e1a5225b265f7b472783fad7d9b108
+]
+-src/main/scala/part3_graphs/GraphBasics.scala,5/6/5677abf3f03d3bfcf15bd95910eaa50090ca190b
+`
+0src/main/scala/part3_graphs/MoreOpenGraphs.scala,a/8/a8cc936d1f0cebaacfa84f7a084a2423f3efc414
