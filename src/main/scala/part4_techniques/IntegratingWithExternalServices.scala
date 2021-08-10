@@ -76,7 +76,7 @@ object IntegratingWithExternalServices extends App {
       "Carl" -> "carl@atomic.net"
     )
 
-    def processEvent(pagerEvent: PagerEvent): Future[String] = Future {
+    def processEvent(pagerEvent: PagerEvent): String = {
       val engineerIndex = ((pagerEvent.date.toInstant.getEpochSecond / (24 * 3600)) % engineers.length).toInt
       val engineer = engineers(engineerIndex)
       val engineerEmail = emails(engineer)
