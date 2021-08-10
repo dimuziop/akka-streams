@@ -9,8 +9,6 @@ H
 scanLint.sh,5/0/5066f3adf31be2dcb6f2ad01d2110ac2a2842882
 L
 .scannerwork/report-task.txt,1/f/1feadc761844720d11268cc01b88d72358e54ba6
-9
-	build.sbt,7/4/74b95601c3a6d9d565cd312fac64094ec0f9d847
 Z
 *src/main/scala/playground/Playground.scala,1/9/190ed1db368ba2764304a646f42ace10d7129a3c
 :
